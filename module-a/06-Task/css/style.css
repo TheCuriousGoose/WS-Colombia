@@ -1,0 +1,60 @@
+/* Work here */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.box:checked {
+    background-color: gold;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.box {
+    background-color: gold;
+}
+
+#box1:checked ~ #sum { --box1-value: 10; }
+#box2:checked ~ #sum { --box2-value: 32; }
+#box3:checked ~ #sum { --box3-value: 64; }
+#box4:checked ~ #sum { --box4-value: -15; }
+#sum::after {
+    content: "Sum: 0";
+}
+
+/* Apply the sum based on which checkboxes are checked */
+#box1:checked ~ #box2:checked ~ #sum::after { content: "Sum: " calc(var(--box1-value) + var(--box2-value)); }
+#box1:checked ~ #box3:checked ~ #sum::after { content: "Sum: " calc(var(--box1-value) + var(--box3-value)); }
+#box1:checked ~ #box4:checked ~ #sum::after { content: "Sum: " calc(var(--box1-value) + var(--box4-value)); }
+#box2:checked ~ #box3:checked ~ #sum::after { content: "Sum: " calc(var(--box2-value) + var(--box3-value)); }
+#box2:checked ~ #box4:checked ~ #sum::after { content: "Sum: " calc(var(--box2-value) + var(--box4-value)); }
+#box3:checked ~ #box4:checked ~ #sum::after { content: "Sum: " calc(var(--box3-value) + var(--box4-value)); }
+#box1:checked ~ #box2:checked ~ #box3:checked ~ #box4:checked ~ #sum::after {
+    content: "Sum: " calc(var(--box1-value) + var(--box2-value) + var(--box3-value) + var(--box4-value));
+}
+

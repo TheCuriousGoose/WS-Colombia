@@ -1,0 +1,48 @@
+/* Work here */
+body {
+    margin: 0;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    margin: 0 40rem;
+    width: 1440px;
+}
+
+
+.rectangle {
+    border: 2px black solid;
+    text-transform: capitalize;
+    width: 100%;
+    min-height: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    align-self: stretch;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 720px) {
+    .flex-md-column {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 0 1rem;
+    }
+}
