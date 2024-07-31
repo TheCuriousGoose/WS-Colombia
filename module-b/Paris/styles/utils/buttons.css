@@ -1,0 +1,5 @@
+.btn { text-align: center; padding: calc(var(--base-padding) * 2) calc(var(--base-padding) * 4); font-family: var(--header-font-family); border: none; border-radius: var(--border-radius); font-size: var(--base-font-size); width: 100% }
+.btn.btn-primary { background-color: var(--primary); color: white; }
+.btn.btn-primary:hover { filter: brightness(85%) }
+.btn.btn-dark { background-color: var(--dark); color: white; }
+.btn.btn-dark:hover { filter: brightness(85%) }

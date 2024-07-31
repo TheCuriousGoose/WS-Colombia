@@ -1,0 +1,14 @@
+:root {
+    --primary: #002395;
+    --secondary: #ED2939;
+    --light: #D5E2F0;
+    --dark: #333;
+    --gray: #474747;
+    --lightgray: #888;
+    --base-margin: 0.25rem;
+    --base-padding: 0.25rem;
+    --base-gap: 0.25rem;
+    --header-font-family: 'paris2024', sans-serif;
+    --border-radius: 0.25rem;
+    --base-font-size: 1rem;
+}

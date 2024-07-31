@@ -1,0 +1,27 @@
+.row { width: 100%; gap: var(--base-gap); }
+.col-1 { width: calc(100% / 12 * 1); }
+.col-2 { width: calc(100% / 12 * 2); }
+.col-3 { width: calc(100% / 12 * 3); }
+.col-4 { width: calc(100% / 12 * 4); }
+.col-5 { width: calc(100% / 12 * 5); }
+.col-6 { width: calc(100% / 12 * 6); }
+.col-7 { width: calc(100% / 12 * 7); }
+.col-8 { width: calc(100% / 12 * 8); }
+.col-9 { width: calc(100% / 12 * 9); }
+.col-10 { width: calc(100% / 12 * 10); }
+.col-11 { width: calc(100% / 12 * 11); }
+.col-12 { width: calc(100% / 12 * 12); }
+
+.gap-0 { gap: 0; }
+.gap-1 { gap: var(--base-gap); }
+.gap-2 { gap: calc(var(--base-gap) * 2); }
+.gap-3 { gap: calc(var(--base-gap) * 4); }
+.gap-4 { gap: calc(var(--base-gap) * 6); }
+.gap-5 { gap: calc(var(--base-gap) * 10); }
+
+.row-gap-0 { row-gap: 0; }
+.row-gap-1 { row-gap: var(--base-gap); }
+.row-gap-2 { row-gap: calc(var(--base-gap) * 2); }
+.row-gap-3 { row-gap: calc(var(--base-gap) * 4); }
+.row-gap-4 { row-gap: calc(var(--base-gap) * 6); }
+.row-gap-5 { row-gap: calc(var(--base-gap) * 10); }
