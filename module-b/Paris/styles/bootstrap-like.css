@@ -1,10 +1,27 @@
 @import './utils/variables.css';
+@import './utils/cards.css';
 @import './utils/spacing.css';
 @import './utils/display.css';
 @import './utils/row.css';
 @import './utils/text.css';
 @import './utils/buttons.css';
 
-body {
-    font-size: var(--base-font-size);
+body { font-size: var(--base-font-size); }
+
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-light { background-color: var(--light); }
+.bg-white { background-color: #fff; }
+
+.bg-split-color { background: linear-gradient(90deg, var(--gray) 50%, var(--dark) 50%); }
+
+.position-relative { position: relative; }
+
+.opacity-50 { opacity: 0.5; }
+.rotate-180 { transform: rotate(180deg); }
+
+@media (max-width: 768px) {
+    .bg-split-color { background: var(--gray) }
+
+    
 }

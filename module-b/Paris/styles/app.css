@@ -7,17 +7,66 @@ h1, h2, h3, h4, h5, h6 { font-family: 'paris2024', sans-serif; font-weight: norm
 
 body { font-family: 'Poppins', sans-serif; min-height: 100vh; }
 
-header { height: 100vh; background: no-repeat url('../imgs/hero-lg.png'); background-size: 100% 80%; background-position: center; background-size: cover;  }
+header { height: 100vh; position: relative; background: no-repeat url('../imgs/hero-lg.png'); background-size: 100% 80%; background-position: center; background-size: cover; }
 
 a { text-decoration: none;}
 
-nav { padding: 0 1rem; background-color: white; }
-nav .navbar-brand { width: 100%; padding: 1rem 0 }
+nav { padding: 0 1rem; background-color: white; overflow-x: clip; }
+nav .navbar-brand { width: 20rem; padding: 1rem 0 }
 nav .navbar-brand img { width: auto; height: 100%; }
 nav .navbar-items { position: relative; }
-nav .navbar-item { width: 100%; height: 100%; display: flex; align-items: center; position: relative; }
+nav .navbar-item { width: 100%; height: 100%; display: flex; align-items: center; position: relative; padding: 0 1rem; }
 nav .navbar-item .navbar-link { text-wrap: nowrap; margin: calc(var(--base-margin) * 4); font-family: var(--header-font-family); font-size: calc(var(--base-font-size) * 1.2); }
+
+nav .navbar-item::before{ content: ''; border-left-color: #74AADE; border-left-style: solid; border-left-width: 0.25rem; position: absolute; top: 0; bottom: 0; left: 0; width: 0; transform: skewX(-25deg); }
+nav .navbar-item:last-child:after{ content: ''; border-left-color: #74AADE; border-left-style: solid; border-left-width: 0.25rem; position: absolute; top: 0; bottom: 0; right: 0; width: 0; transform: skewX(-25deg); }
+nav .navbar-item:last-child { margin-right: 3rem;}
 
 header .header-title { padding: 1rem; text-align: end; }
 header .header-title h1 { color: white; font-size: calc(var(--base-font-size) * 6); }
 header .header-title h2 { color: white; font-size: calc(var(--base-font-size) * 4); filter: brightness(95%) }
+
+.carousel-buttons { position: absolute; top: 90%; transform: translateX(-50%) translateY(-50%); left: 50%;  display: flex; gap: 0.2rem; }
+.carousel-buttons .image-selector { background-color: rgba(0, 0, 0, 0.6); padding: 0.5rem 0.75rem; border-radius: 0.25rem; gap: 0.5rem; align-items: center; }
+.carousel-buttons .image-selector .img-circle { border-radius: 50%; width: 1rem; height: 1rem; background-color: rgba(255, 255, 255, 0.6); }
+.carousel-buttons .image-selector .img-circle.active { background-color: white; }
+
+.slanted-up, .slanted-down { position: relative; overflow-x: clip; }
+.slanted-up::after { border-width: 0 0 4.3rem 100vw; bottom: 100%; border-color: transparent transparent #fff transparent; content: ''; position: absolute; width: 100%; height: 100%; pointer-events: none; border-style: solid; }
+.slanted-up-light::after { border-color: transparent transparent var(--light) transparent; }
+
+.underlines-left { margin-right: 12rem; }
+.underlines-right { margin-left: 12rem; }
+
+.countdown-section { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.countdown-section .number { font-size: calc(var(--base-font-size) * 6); font-weight: 600; font-family: var(--header-font-family); color: var(--gray); }
+.countdown-section .unit { font-size: calc(var(--base-font-size) * 1.2); font-family: var(--header-font-family); color: var(--lightgray); }
+.countdown-seperator::after{ content: ':'; font-size: calc(var(--base-font-size) * 6); font-weight: 500; color: #ddd; vertical-align: top; }
+
+
+@media (max-width: 1200px) {
+    .navbar-brand { overflow: clip; position: relative; }
+    .navbar-brand::before{ content: ''; border-left-color: #74AADE; border-left-style: solid; border-left-width: 0.25rem; position: absolute; top: 0; bottom: 0; right: 20px; width: 0; transform: skewX(-25deg); }
+    nav .navbar-item:last-child::after{ content: ''; border: none; }
+    nav .navbar-item:last-child { margin-right: 1rem;}
+    nav .navbar-item::before{ content: ''; border: none; }
+}
+
+@media (max-width: 768px) {
+    nav .navbar-brand { width: 20rem; padding: 1rem 0 }
+
+    header .header-title h1 { color: white; font-size: calc(var(--base-font-size) * 2.5); }
+    header .header-title h2 { color: white; font-size: calc(var(--base-font-size) * 2); filter: brightness(95%); margin-bottom: 2rem; }
+
+    .carousel-buttons { position: absolute; top: 50%; transform: translateX(-50%) translateY(-50%); left: 50%;  display: flex; justify-content: space-between; width: 100%; padding: 1rem; }
+
+    .underlines-left { margin-right: 6rem; }
+    .underlines-right { margin-left: 6rem; }
+
+    .countdown-section { display: flex; justify-content: center; align-items: center; flex-direction: column; }
+    .countdown-section .number { font-size: calc(var(--base-font-size) * 4); font-weight: 600; font-family: var(--header-font-family); color: var(--gray); }
+    .countdown-section .unit { font-size: calc(var(--base-font-size) * 1.2); font-family: var(--header-font-family); color: var(--lightgray); }
+    .countdown-seperator::after{ content: ':'; font-size: calc(var(--base-font-size) * 6); font-weight: 500; color: #ddd; vertical-align: top; }
+    
+    .mascot { width: 80vw; margin-bottom: 3rem; }
+}

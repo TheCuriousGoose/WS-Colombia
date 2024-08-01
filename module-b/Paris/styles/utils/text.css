@@ -14,3 +14,22 @@
 .text-capitalize { text-transform: capitalize !important; }
 
 .text-nowrap { text-wrap: nowrap; }
+.text-gradient { background: linear-gradient(90deg, var(--secondary), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 4rem; font-weight: 800; }
+
+.fs-1 { font-size: calc(var(--base-font-size) * 10); }
+.fs-2 { font-size: calc(var(--base-font-size) * 4); }
+.fs-3 { font-size: calc(var(--base-font-size) * 3); }
+.fs-4 { font-size: calc(var(--base-font-size) * 2); }
+.fs-5 { font-size: calc(var(--base-font-size) * 1.2); }
+.fs-6 { font-size: var(--base-font-size); }
+
+.text-white { color: white; }
+.text-black { color: black; }
+
+.text-decoration-none { text-decoration: none; }
+.text-decoration-underline { text-decoration: underline; }
+.text-decoration-line-through { text-decoration: line-through; }
+
+@media (min-width: 768px) {
+    .text-md-start { text-align: left !important; }
+}
