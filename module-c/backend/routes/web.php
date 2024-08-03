@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('olympics')->group(function() {
     // Auth
-    Route::get('login', [LoginController::class, 'login'])->name('login');
-    Route::get('logout', [LoginController::class, 'logout'])->name('logout');
+    Route::post('login', [LoginController::class, 'login'])->name('login');
+    Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
     // Events
     Route::get('events/list', [EventController::class, 'index'])->name('events.index');
@@ -28,6 +28,6 @@ Route::prefix('olympics')->group(function() {
 
     //Participants
     Route::get('participants/list/{event}', [ParticipantController::class, 'index'])->name('participants.index');
-    Route::post('participants/create', [ParticipantController::class, 'createParticipant'])->name('participants.create');
+    Route::post('participants/create', [ParticipantController::class, 'create'])->name('participants.create');
     Route::delete('participants/delete/{participant}', [ParticipantController::class, 'delete'])->name('participants.delete');
 });

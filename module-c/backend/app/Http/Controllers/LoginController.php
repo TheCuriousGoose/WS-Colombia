@@ -13,7 +13,14 @@ class LoginController extends Controller
         $credentials = $request->only('username', 'password');
 
         if (Auth::attempt($credentials)) {
-            return response()->json('Login successful', 200);
+            // Add token to user and response random 128 characters
+            $user = Auth::user();
+            $token = $user->createToken();
+
+            return response()->json([
+                'message' => 'successfully logged in',
+                'token' => $token
+            ], 200);
         }
 
         // Authentication failed
@@ -24,5 +31,10 @@ class LoginController extends Controller
     {
         Auth::logout();
         return response()->json('Logout successful', 200);
+    }
+
+    public function isLoggedIn()
+    {
+        return response()->json(Auth::check(), 200);
     }
 }

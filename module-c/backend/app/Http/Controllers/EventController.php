@@ -10,7 +10,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::all();
+        $events = Event::with('venue')->get();
 
         if (count($events) > 0) {
             return response()->json($events, 200);

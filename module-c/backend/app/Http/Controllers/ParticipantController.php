@@ -28,8 +28,11 @@ class ParticipantController extends Controller
 
         $validator = Validator::make($request->all(), $rules);
 
-        if($validator->fails()) {
-            return response()->json('Bad request: Request error', 400);
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'Bad request: Request error',
+                'errors' => $validator->errors()
+            ], 400);
         }
 
         $participant = Participant::create($validator->validated());
@@ -37,7 +40,7 @@ class ParticipantController extends Controller
         return response()->json($participant, 200);
     }
 
-    public function destroy(Participant $participant)
+    public function delete(Participant $participant)
     {
         $participant->delete();
 

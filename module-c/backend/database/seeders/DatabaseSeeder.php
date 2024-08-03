@@ -20,10 +20,12 @@ class DatabaseSeeder extends Seeder
                 'username' => 'admin',
             ],
             [
-                'password' => Hash::make('admin')
+                'password' => Hash::make('admin'),
             ]
         );
 
         $this->call(VenueSeeder::class);
+        $this->call(EventSeeder::class);
+        $this->call(ParticipantSeeder::class);
     }
 }
