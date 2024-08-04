@@ -1,0 +1,372 @@
+{
+    "countries": [
+        {
+            "name": "USA",
+            "flag": "imgs/flags/USA.png",
+            "medals": {
+                "gold": 35,
+                "silver": 28,
+                "bronze": 22
+            },
+            "disciplines": [
+                {
+                    "name": "Athletics",
+                    "image": "imgs/disciplines/Athletics.svg",
+                    "gold": 10,
+                    "silver": 8,
+                    "bronze": 6
+                },
+                {
+                    "name": "Swimming",
+                    "image": "imgs/disciplines/Swimming.svg",
+                    "gold": 8,
+                    "silver": 6,
+                    "bronze": 5
+                },
+                {
+                    "name": "Gymnastics",
+                    "image": "imgs/disciplines/Gymnastics.svg",
+                    "gold": 7,
+                    "silver": 6,
+                    "bronze": 4
+                },
+                {
+                    "name": "Basketball",
+                    "image": "imgs/disciplines/Basketball.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Wrestling",
+                    "image": "imgs/disciplines/Wrestling.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 4
+                }
+            ]
+        },
+        {
+            "name": "China",
+            "flag": "imgs/flags/China.png",
+            "medals": {
+                "gold": 30,
+                "silver": 25,
+                "bronze": 20
+            },
+            "disciplines": [
+                {
+                    "name": "Gymnastics",
+                    "image": "imgs/disciplines/Gymnastics.svg",
+                    "gold": 8,
+                    "silver": 7,
+                    "bronze": 5
+                },
+                {
+                    "name": "Weightlifting",
+                    "image": "imgs/disciplines/Weightlifting.svg",
+                    "gold": 7,
+                    "silver": 6,
+                    "bronze": 4
+                },
+                {
+                    "name": "Diving",
+                    "image": "imgs/disciplines/Diving.svg",
+                    "gold": 6,
+                    "silver": 5,
+                    "bronze": 4
+                },
+                {
+                    "name": "Table Tennis",
+                    "image": "imgs/disciplines/TableTennis.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 4
+                },
+                {
+                    "name": "Badminton",
+                    "image": "imgs/disciplines/Badminton.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                }
+            ]
+        },
+        {
+            "name": "Japan",
+            "flag": "imgs/flags/Japan.png",
+            "medals": {
+                "gold": 25,
+                "silver": 20,
+                "bronze": 18
+            },
+            "disciplines": [
+                {
+                    "name": "Judo",
+                    "image": "imgs/disciplines/Judo.svg",
+                    "gold": 6,
+                    "silver": 5,
+                    "bronze": 4
+                },
+                {
+                    "name": "Wrestling",
+                    "image": "imgs/disciplines/Wrestling.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 4
+                },
+                {
+                    "name": "Swimming",
+                    "image": "imgs/disciplines/Swimming.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Athletics",
+                    "image": "imgs/disciplines/Athletics.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 4
+                },
+                {
+                    "name": "Karate",
+                    "image": "imgs/disciplines/Karate.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                }
+            ]
+        },
+        {
+            "name": "Germany",
+            "flag": "imgs/flags/Germany.png",
+            "medals": {
+                "gold": 20,
+                "silver": 18,
+                "bronze": 15
+            },
+            "disciplines": [
+                {
+                    "name": "Cycling",
+                    "image": "imgs/disciplines/Cycling.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Athletics",
+                    "image": "imgs/disciplines/Athletics.svg",
+                    "gold": 4,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Equestrian",
+                    "image": "imgs/disciplines/Equestrian.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                },
+                {
+                    "name": "Swimming",
+                    "image": "imgs/disciplines/Swimming.svg",
+                    "gold": 4,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Rowing",
+                    "image": "imgs/disciplines/Rowing.svg",
+                    "gold": 3,
+                    "silver": 3,
+                    "bronze": 3
+                }
+            ]
+        },
+        {
+            "name": "Australia",
+            "flag": "imgs/flags/Australia.png",
+            "medals": {
+                "gold": 18,
+                "silver": 15,
+                "bronze": 14
+            },
+            "disciplines": [
+                {
+                    "name": "Swimming",
+                    "image": "imgs/disciplines/Swimming.svg",
+                    "gold": 7,
+                    "silver": 6,
+                    "bronze": 5
+                },
+                {
+                    "name": "Cycling",
+                    "image": "imgs/disciplines/Cycling.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                },
+                {
+                    "name": "Rowing",
+                    "image": "imgs/disciplines/Rowing.svg",
+                    "gold": 3,
+                    "silver": 3,
+                    "bronze": 3
+                },
+                {
+                    "name": "Sailing",
+                    "image": "imgs/disciplines/Sailing.svg",
+                    "gold": 2,
+                    "silver": 2,
+                    "bronze": 2
+                },
+                {
+                    "name": "Athletics",
+                    "image": "imgs/disciplines/Athletics.svg",
+                    "gold": 2,
+                    "silver": 1,
+                    "bronze": 1
+                }
+            ]
+        },
+        {
+            "name": "Russia",
+            "flag": "imgs/flags/Russia.png",
+            "medals": {
+                "gold": 22,
+                "silver": 20,
+                "bronze": 18
+            },
+            "disciplines": [
+                {
+                    "name": "Wrestling",
+                    "image": "imgs/disciplines/Wrestling.svg",
+                    "gold": 6,
+                    "silver": 5,
+                    "bronze": 5
+                },
+                {
+                    "name": "Gymnastics",
+                    "image": "imgs/disciplines/Gymnastics.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 4
+                },
+                {
+                    "name": "Swimming",
+                    "image": "imgs/disciplines/Swimming.svg",
+                    "gold": 4,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Athletics",
+                    "image": "imgs/disciplines/Athletics.svg",
+                    "gold": 4,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Boxing",
+                    "image": "imgs/disciplines/Boxing.svg",
+                    "gold": 3,
+                    "silver": 3,
+                    "bronze": 3
+                }
+            ]
+        },
+        {
+            "name": "United Kingdom",
+            "flag": "imgs/flags/UnitedKingdom.png",
+            "medals": {
+                "gold": 23,
+                "silver": 18,
+                "bronze": 17
+            },
+            "disciplines": [
+                {
+                    "name": "Cycling",
+                    "image": "imgs/disciplines/Cycling.svg",
+                    "gold": 6,
+                    "silver": 5,
+                    "bronze": 4
+                },
+                {
+                    "name": "Athletics",
+                    "image": "imgs/disciplines/Athletics.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 4
+                },
+                {
+                    "name": "Swimming",
+                    "image": "imgs/disciplines/Swimming.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                },
+                {
+                    "name": "Equestrian",
+                    "image": "imgs/disciplines/Equestrian.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                },
+                {
+                    "name": "Boxing",
+                    "image": "imgs/disciplines/Boxing.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                }
+            ]
+        },
+        {
+            "name": "France",
+            "flag": "imgs/flags/France.png",
+            "medals": {
+                "gold": 20,
+                "silver": 17,
+                "bronze": 15
+            },
+            "disciplines": [
+                {
+                    "name": "Judo",
+                    "image": "imgs/disciplines/Judo.svg",
+                    "gold": 5,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Cycling",
+                    "image": "imgs/disciplines/Cycling.svg",
+                    "gold": 4,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Athletics",
+                    "image": "imgs/disciplines/Athletics.svg",
+                    "gold": 4,
+                    "silver": 4,
+                    "bronze": 3
+                },
+                {
+                    "name": "Swimming",
+                    "image": "imgs/disciplines/Swimming.svg",
+                    "gold": 4,
+                    "silver": 3,
+                    "bronze": 3
+                },
+                {
+                    "name": "Fencing",
+                    "image": "imgs/disciplines/Fencing.svg",
+                    "gold": 3,
+                    "silver": 2,
+                    "bronze": 3
+                }
+            ]
+        }
+    ]
+}

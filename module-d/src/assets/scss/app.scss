@@ -1,0 +1,147 @@
+@import './fonts/paris2024';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: url('../imgs/bg.png');
+    background-size: 115%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    font-family: 'paris2024', sans-serif;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border: white 2px solid;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'paris2024', sans-serif;
+
+    .btn-img {
+        border-radius: 50%;
+        height: 2.5rem;
+    }
+}
+
+.container {
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-5 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 4.5rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.prev-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+
+#title {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-family: 'paris2024', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+    color: white;
+    font-family: 'paris2024', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    &,
+    td,
+    th {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-collapse: collapse;
+        padding: 0.5rem;
+    }
+
+    th {
+        padding-bottom: 1rem;
+    }
+
+    td {
+        border-top: 1px solid white;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.display-1 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.display-2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.text-start {
+    text-align: start;
+}
